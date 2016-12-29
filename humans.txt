@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Wells Riley -- Creator -- @wr
+    Alex Baldwin -- Thought Leader -- @alexbaldwin
+
+# THANKS
+
+    Mom
