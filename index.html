@@ -15,6 +15,17 @@
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         color: #31343F;
         font-size: 20px;
+        -webkit-font-kerning: normal;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+      }
+
+      ::selection {
+        background: #FFE100;
+      }
+      ::-moz-selection {
+        background: #FFE100;
       }
 
       h1 {
@@ -25,12 +36,22 @@
       .h1 {
         font-weight: 300;
         font-size: 3rem;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
       }
 
       p, li {
-        line-height: 1.5;
-        font-weight: 300;
+        line-height: 1.6;
+        font-weight: 400;
         margin-bottom: .5rem;
+        list-style-type: square;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
       }
 
       .strike {
@@ -50,8 +71,18 @@
         transform: rotate(15deg);
       }
 
+      nav a {
+        color: inherit;
+        text-decoration: none;
+        transition: all .2s;
+      }
+
+      nav a:hover {
+        color: #3993DD;
+      }
+
       .max-width-2 { max-width: 700px; }
-      .h5 { line-height: 1.42; }
+      .h5 { line-height: 1.5; }
       .h6 { font-weight: 800; }
       .py05 { padding-top: .25rem; padding-bottom: .25rem; }
       .uppercase { text-transform: uppercase; }
@@ -65,12 +96,19 @@
       .bg-yellow { background-color: #FFE100; }
 
       @media (max-width:40em){
-        .border-left, .border-right, .border-top, .border-bottom {
-          border: 1px solid;
+        body {
+          font-size: 18px;
         }
 
-        .rounded-top, .rounded-bottom, .rounded-left, .rounded-right {
-          border-radius: 0;
+        p { line-height: 1.4; }
+
+        h1 { font-size: 2rem; }
+
+        .applePay {
+          border: none;
+        }
+        .price {
+          border-radius: 3px;
         }
 
         .my4 { margin-top: 1vh; margin-bottom: 1vh; }
@@ -82,7 +120,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="px3">
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -105,27 +143,39 @@
 
       <ul class="pb3">
         <li>Weekly (for now)</li>
-      <li>Actionable. Learn what to watch, read, see, and do without sifting through tons of media or ⌘R’ing your news feed</li>
-      <li>Curated by guys and gals with great taste, a positive attitude, and enough trivia knowledge to make Alex Trebec blush</li>
-      <li>Contextual. With descriptions of what things are and why they’re up-and-coming, cool, or noteworthy</li>
-      <li>Independent. No ads, no ‘promoted’ things, no acquisitions. Ever.</li>
-      <li>Currently only available in the City of San Francisco</li>
-      <li>$20 per calendar year*</li>
-      <li>A work-in-progress</li>
-    </ul>
+        <li>Actionable. Learn what to watch, read, see, and do without sifting through tons of media or ⌘R’ing your news feed</li>
+        <li>Curated by guys and gals with great taste, a positive attitude, and enough trivia knowledge to make Alex Trebec blush</li>
+        <li>Contextual. With descriptions of what things are and why they’re up-and-coming, cool, or noteworthy</li>
+        <li>Independent. No ads, no ‘promoted’ things, no acquisitions. Ever.</li>
+        <li>Currently only available in the City of San Francisco</li>
+        <li>$20 per calendar year*</li>
+        <li>A work-in-progress</li>
+      </ul>
 
-    <div class="my4 sm-flex">
-      <div class="sm-col-6 bg-blue py4 px2 h1 white center rounded-left">
-        <span class="strike">$20</span>
-        $15
-        <span class="h6 uppercase rounded bg-yellow px1 py05 gray" style="vertical-align:13px">Save 25%</span>
+      <div class="my4 sm-flex">
+        <div class="sm-col-6 bg-blue py4 px2 h1 white center rounded-left price">
+          <span class="strike">$20</span>
+          $15
+          <span class="h6 uppercase rounded bg-yellow px1 py05 gray nowrap" style="vertical-align:13px">Save 25%</span>
+        </div>
+        <div class="sm-col-6 py4 px2 center border-top border-right border-bottom rounded-right applePay">
+          <div class="align-middle">
+            <img src="img/applepay@2x.png" width="180" alt="Pay">
+            <p class="h5 m0">Good 'till January 1, 2018</p>
+          </div>
+        </div>
       </div>
-      <div class="sm-col-6 py4 px2 center border-top border-right border-bottom rounded-right">
-        <img src="img/applepay@2x.png" width="180" alt="Pay">
-      </div>
-    </div>
 
-    <p class="h5 py3 mb4">* Fomo costs money because we have expenses like our domain, MailChimp, and feeding our hungry curators. This is a side project for all of us but, from experience, it’s hard to get motivated to continue putting time in when you’re constantly sinking a few bucks here and there… it’s like a hole. For the price of four cups of Philz coffee, you get 52 weeks of emails that we hope will help you become more cultured, more aware of new and interesting media, and help you connect with friends and family in the real world instead of online. Might be worth a shot?</p>
+      <p class="h5 py3 mb4">* Fomo costs money because we have expenses like our domain, MailChimp, and feeding our hungry curators. This is a side project for all of us but, from experience, it’s hard to get motivated to continue putting time in when you’re constantly sinking a few bucks here and there… it’s like a hole. For the price of four cups of Philz coffee, you get 52 weeks of emails that we hope will help you become more cultured, more aware of new and interesting media, and help you connect with friends and family in the real world instead of online. Might be worth a shot?</p>
+
+      <footer class="mt4 py3 border-top h5">
+        &copy;<script>document.write(new Date().getFullYear())</script> Brunch
+
+        <nav class="right">
+          <a class="ml1" href="/privacy">Privacy</a>
+          <a class="ml1" href="/terms">Terms</a>
+          <a class="ml1" href="wells.riley@aol.com">Contact</a>
+        </nav>
 
     </div>
     <!-- Google Analytics -->
