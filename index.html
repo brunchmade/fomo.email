@@ -38,6 +38,11 @@
         hyphens: auto;
       }
 
+      h2 {
+        font-weight: 800;
+        font-size: 2.25rem;
+      }
+
       p, li {
         line-height: 1.6;
         font-weight: 400;
@@ -51,20 +56,20 @@
       }
 
       .strike {
-        color: rgba(255,255,255,.5);
+        color: rgba(57,147,221,.25);
         position: relative;
       }
 
       .strike:after {
         content: '';
-        width: 100px;
-        height: 4px;
-        background: #064971;
+        width: 94px;
+        height: 3px;
+        background: #3993DD;
         display: block;
         position: absolute;
         top: 50%;
-        left: -8px;
-        transform: rotate(15deg);
+        left: -4px;
+        transform: rotate(18deg);
       }
 
       nav a {
@@ -89,9 +94,8 @@
       .bg-yellow { background-color: #FFE100; }
 
       @media (max-width:40em){
-        h1 { font-size: 2rem; }
-        .applePay { border: none; }
-        .price { border-radius: 3px; }
+        h1 { font-size: 2.5rem; }
+        h1 { font-size: 1.75rem; }
         .my4 { margin-top: 1vh; margin-bottom: 1vh; }
         .mt4 { margin-top: 1vh; }
         .mb4 { margin-bottom: 1vh; }
@@ -133,17 +137,20 @@
         <li>A work-in-progress</li>
       </ul>
 
-      <div class="my4 sm-flex">
-        <div class="sm-col-6 bg-blue py4 px2 h1 white center rounded-left price">
-          <span class="strike">$20</span>
-          $15
-          <span class="h6 uppercase rounded bg-yellow px1 py05 gray nowrap" style="vertical-align:13px">Save 25%</span>
+      <div class="my4 py3 sm-flex border-top border-bottom">
+        <div class="sm-col-6 rounded-left">
+          <img src="img/fomo.svg" class="my3">
         </div>
-        <div class="sm-col-6 py4 px2 center border-top border-right border-bottom rounded-right applePay">
-          <div class="align-middle">
-            <img src="img/applepay@2x.png" width="180" alt="Pay">
-            <p class="h5 m0">Good 'till January 1, 2018</p>
+        <div class="sm-col-6">
+          <h2 class="m0">Sign up now<br>for early access</h2>
+          <p class="h4" style="line-height: 1.4;">Receive a <strong>lifetime discount</strong> as a thank-you for being an early adopter ✌️</p>
+          <div class="h1 blue my3">
+            <span class="strike">$20</span>
+            $15
+            <span class="h6 uppercase rounded bg-yellow px1 py05 gray nowrap" style="vertical-align:13px">Save 25%</span>
           </div>
+          <img src="img/applepay.svg" width="166" height="42" alt="Pay">
+          <p class="h5 m0">Good 'till January 1, 2018</p>
         </div>
       </div>
 
