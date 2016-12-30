@@ -21,12 +21,8 @@
         padding: 0;
       }
 
-      ::selection {
-        background: #FFE100;
-      }
-      ::-moz-selection {
-        background: #FFE100;
-      }
+      ::selection { background: #FFE100; }
+      ::-moz-selection { background: #FFE100; }
 
       h1 {
         font-weight: 800;
@@ -54,15 +50,29 @@
         padding: 0;
       }
 
+      .strike {
+        color: rgba(255,255,255,.5);
+        position: relative;
+      }
+
+      .strike:after {
+        content: '';
+        width: 100px;
+        height: 4px;
+        background: #064971;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -8px;
+        transform: rotate(15deg);
+      }
+
       nav a {
         color: inherit;
         text-decoration: none;
         transition: all .2s;
       }
-
-      nav a:hover {
-        color: #3993DD;
-      }
+      nav a:hover { color: #3993DD; }
 
       .max-width-2 { max-width: 700px; }
       .h5 { line-height: 1.5; }
@@ -79,14 +89,9 @@
       .bg-yellow { background-color: #FFE100; }
 
       @media (max-width:40em){
-        body {
-          font-size: 18px;
-        }
-
-        p { line-height: 1.4; }
-
         h1 { font-size: 2rem; }
-
+        .applePay { border: none; }
+        .price { border-radius: 3px; }
         .my4 { margin-top: 1vh; margin-bottom: 1vh; }
         .mt4 { margin-top: 1vh; }
         .mb4 { margin-bottom: 1vh; }
