@@ -83,7 +83,8 @@ nav a:hover { color: #3993DD; }
 @media (max-width:40em){
   h1 { font-size: 2.5rem; }
   h1 { font-size: 1.75rem; }
-  .my4 { margin-top: 1vh; margin-bottom: 1vh; }
-  .mt4 { margin-top: 1vh; }
-  .mb4 { margin-bottom: 1vh; }
+  .my4 { margin-top: 5vh; margin-bottom: 5vh; }
+  .mt4 { margin-top: 5vh; }
+  .mb4 { margin-bottom: 5vh; }
+  .pt3 { padding-top: 0; }
 }
