@@ -79,7 +79,7 @@ footer a:hover { color: #3993DD; }
 .bg-white { background-color: #FFFFFF; }
 .yellow { color: #FFE100; }
 .bg-yellow { background-color: #FFE100; }
-.border, .border-top, .border-bottom, .border-left, .border-right { border-color: rgba(57, 62, 65, .1) }
+.border, .border-top, .border-bottom, .border-left, .border-right { border-width: 2px; border-color: rgba(57, 62, 65, 1) }
 @media (max-width:40em){
   h1 { font-size: 2.5rem; }
   h1 { font-size: 1.75rem; }
