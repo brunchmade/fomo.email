@@ -37,6 +37,17 @@ p, li {
   list-style-type: square;
 }
 
+p a {
+  color: #31343F;
+  text-decoration: underline;
+  transition: all .1s;
+}
+
+p a:hover,
+p a:active {
+  color: #3993DD;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -64,8 +75,9 @@ ul {
   background: transparent;
   display: inline-block;
   border-radius: 4px;
-  padding: .5rem 2rem;
+  padding: .5rem 1rem;
   text-decoration: none;
+  text-align: center;
   position: relative;
   color: rgba(49, 52, 63, 1);
   cursor: pointer;
@@ -121,4 +133,6 @@ footer a:hover { color: #3993DD; }
   .mb4 { margin-bottom: 5vh; }
   .pt3 { padding-top: 0; }
   .m-pr4 { padding-right: 1.5rem; }
+  .btn { box-sizing: border-box; width: 100%; }
+  input[type="email"] { box-sizing: border-box; width: 100%; }
 }
