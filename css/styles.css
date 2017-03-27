@@ -111,6 +111,66 @@ footer a {
 }
 footer a:hover { color: #3993DD; }
 
+.emailcontainer {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.emailwindow {
+  width: 90vw;
+  max-width: 660px;
+  height: 95vh;
+  box-sizing: border-box;
+  background: white url('../img/mac-header.png') repeat-x top;
+  background-size: 1px 22px;
+  box-shadow: 0 0 1px rgba(0,0,0,.25), 0 4px 12px rgba(0,0,0,.5);
+  border-radius: 4px 4px 0 0;
+  position: fixed;
+  bottom: -95vh;
+  right: calc(50% - 330px);
+  padding-top: 22px;
+  overflow: hidden;
+  transition: bottom .5s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.emailframe {
+  width: 100%;
+  height: 95vh;
+  border: none;
+}
+
+.emailwindow .h5 {
+  font-size: 13px;
+}
+
+.emailwindow .border-bottom {
+  border-color: #f1f1f1;
+}
+
+.stoplights {
+  background: url('../img/stoplights.png') no-repeat top;
+  background-size: 52px 24px;
+  width: 52px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  cursor: pointer;
+}
+
+.stoplights:hover {
+  background-position: bottom;
+}
+
 .max-width-2 { max-width: 700px; }
 .h5 { font-size: .75rem; line-height: 1.5; }
 .h6 { font-weight: 800; }
@@ -135,4 +195,5 @@ footer a:hover { color: #3993DD; }
   .m-pr4 { padding-right: 1.5rem; }
   .btn { box-sizing: border-box; width: 100%; }
   input[type="email"] { box-sizing: border-box; width: 100%; }
+  .emailwindow { width: 98vw; right: 1vw; }
 }
