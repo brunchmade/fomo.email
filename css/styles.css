@@ -125,7 +125,7 @@ footer a:hover { color: #3993DD; }
 
 .emailwindow {
   width: 90vw;
-  max-width: 660px;
+  max-width: 750px;
   height: 95vh;
   box-sizing: border-box;
   background: white url('../img/mac-header.png') repeat-x top;
@@ -134,18 +134,17 @@ footer a:hover { color: #3993DD; }
   border-radius: 4px 4px 0 0;
   position: fixed;
   bottom: -95vh;
-  right: calc(50% - 330px);
+  right: calc(50% - 375px);
   padding-top: 22px;
-  overflow: hidden;
-  transition: bottom .5s;
+  transition: bottom .5s cubic-bezier(0.23, 1, 0.32, 1);
   -webkit-user-select: none;
   user-select: none;
 }
 
 .emailframe {
   width: 100%;
-  height: 95vh;
-  border: none;
+  height: calc(95vh - 116px);
+  border: 2px;
 }
 
 .emailwindow .h5 {
